@@ -25,8 +25,12 @@ public class StudentService {
     public Student getStudentByName(String sName){
         return studentRepository.getStudentFromDB(sName);
     }
+
+    public Teacher getTeacherByName(String teacherName){
+        return studentRepository.getTeacherFromDB(teacherName);
+    }
     public List<String> getStudentsByTeacherName(String tName){
-        return studentRepository.listOfStudentsByTeacherName(tName);
+        return studentRepository.fetchStudentsByTeacherName(tName);
     }
 
     public List<String> getAllStudents(){

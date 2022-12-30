@@ -68,7 +68,7 @@ public class StudentRepository {
         }
     }
 
-    public List<String> listOfStudentsByTeacherName(String tName){
+    public List<String> fetchStudentsByTeacherName(String tName){
         if(pair.containsKey(tName)){
             return pair.get(tName);
         }
