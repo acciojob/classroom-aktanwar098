@@ -95,9 +95,9 @@ public class StudentRepository {
                 pair.remove(tName);
             }
             teacherDB.remove(tName);
-            return "Teacher Deleted Successfully";
+            return "deleted sucessfully";
         }
-        return "Teacher Doesnot Exist";
+        return "teacher does not exist";
     }
 
     public String deleteAllTeacherFromDB(){
@@ -109,7 +109,6 @@ public class StudentRepository {
                     studentDB.remove(student);
                 }
             }
-
         }
         teacherDB.clear();
         pair.clear();
