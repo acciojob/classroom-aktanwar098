@@ -100,6 +100,25 @@ public class StudentRepository {
         return "Teacher Doesnot Exist";
     }
 
+    public String deleteAllTeacherFromDB(){
+
+        for(String teacher:pair.keySet()){
+            List<String> studentList=pair.get(teacher);
+            for(String student:studentList){
+                if(studentDB.containsKey(student)){
+                    studentDB.remove(student);
+                }
+            }
+
+        }
+        teacherDB.clear();
+        pair.clear();
+
+        return "All Teachers Deleted Successfully";
+    }
+
+
+
 
 
 

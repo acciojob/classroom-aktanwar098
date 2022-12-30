@@ -36,6 +36,10 @@ public class StudentService {
         return studentRepository.deleteTeacherFromDB(tName);
     }
 
+    public String deleteAllTeachers(){
+        return studentRepository.deleteAllTeacherFromDB();
+    }
+
 
 
 
