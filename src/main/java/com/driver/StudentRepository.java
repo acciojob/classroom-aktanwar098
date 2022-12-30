@@ -114,7 +114,7 @@ public class StudentRepository {
         teacherDB.clear();
         pair.clear();
 
-        return "All Teachers Deleted Successfully";
+        return "all teachers deleted sucessfully";
     }
 
 
