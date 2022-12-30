@@ -33,7 +33,7 @@ public class StudentRepository {
         return "Teacher added successfully";
     }
 
-    public String addPair(String sName,String tName){
+    public String addstudentTeacherPairDB(String sName,String tName){
         if(studentDB.containsKey(sName) && teacherDB.containsKey(tName)){
             if(!pair.containsKey(tName)){
                 List<String> studentList = new ArrayList<>();

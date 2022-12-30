@@ -20,7 +20,7 @@ public class StudentService {
         return studentRepository.addTeacherToDb(teacher);
     }
     public String addStudentTeacherPair(String sName,String tName){
-        return studentRepository.addPair(sName,tName);
+        return studentRepository.addstudentTeacherPairDB(sName,tName);
     }
     public Student getStudentByName(String sName){
         return studentRepository.getStudentFromDB(sName);
