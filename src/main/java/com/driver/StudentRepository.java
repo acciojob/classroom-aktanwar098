@@ -22,9 +22,9 @@ public class StudentRepository {
 
     public String addStudentToDB(Student student){
 
-        String sname = student.getName();
-        studentDB.put(sname,student);
-        return "Student added successfully";
+        String sName = student.getName();
+        studentDB.put(sName,student);
+        return "New student added successfully";
     }
 
     public String addTeacherToDb(Teacher teacher){
